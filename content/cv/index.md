@@ -1,77 +1,132 @@
 ---
-title: CV
+title: "CV"
 ---
 
+<div class="cv-page">
 
-Curriculum Vitae
+<div class="cv-header">
+<p class="cv-eyebrow">Curriculum Vitae</p>
+<h1>Bryanna Downing</h1>
+<p class="cv-subtitle">Biomedical Engineering · Bioinformatics</p>
 
-# Bryanna Downing
+<div class="cv-actions">
+<a class="cv-button" href="/files/Bryanna_Downing_Resume.pdf" target="_blank" rel="noopener">
+View Résumé PDF
+</a>
+</div>
+</div>
 
-Biomedical Engineering · Bioinformatics
+<section class="cv-section">
+<h2>Education</h2>
 
-[View Résumé PDF](/files/Bryanna_Downing_Resume.pdf)
+<div class="cv-entry">
+<div class="cv-entry-main">
+<h3>University of Florida</h3>
+<p>B.S. Biomedical Engineering · Minor in Bioinformatics</p>
+</div>
+<div class="cv-entry-meta">
+<span>Gainesville, FL</span>
+<span>Expected May 2027</span>
+</div>
+</div>
 
-## Education
+<div class="cv-entry">
+<div class="cv-entry-main">
+<h3>Broward College (Dual Enrollment)</h3>
+<p>Associate of Arts</p>
+</div>
+<div class="cv-entry-meta">
+<span>Davie, FL</span>
+<span>May 2023</span>
+</div>
+</div>
+</section>
 
-### University of Florida
+<section class="cv-section">
+<h2>Research Experience</h2>
 
-B.S. Biomedical Engineering · Minor in Bioinformatics
+<div class="cv-entry cv-entry-detailed">
+<div class="cv-entry-header">
+<div class="cv-entry-main">
+<h3>Undergraduate Research Assistant</h3>
+<p>Porras TMI Lab · University of Florida</p>
+</div>
+<div class="cv-entry-meta">
+<span>September 2025 – Present</span>
+</div>
+</div>
 
-Gainesville, FLExpected May 2027
+<ul>
+<li>Evaluating dbCAN and Cayman for carbohydrate-active enzyme annotation across <em>Bacteroides fragilis</em> genomes and related type strains.</li>
+<li>Comparing CAZyme family annotations, substrate coverage, and substrate specificity with emphasis on host-derived glycans and extracellular matrix components.</li>
+<li>Performed BLAST searches using <em>bft-1</em>, <em>bft-2</em>, and <em>bft-3</em> reference genes.</li>
+<li>Used R and Python to visualize genome distributions across host sources and disease states.</li>
+</ul>
+</div>
+</section>
 
-### Broward College (Dual Enrollment)
+<section class="cv-section">
+<h2>Teaching Experience</h2>
 
-Associate of Arts 
+<div class="cv-entry cv-entry-detailed">
+<div class="cv-entry-header">
+<div class="cv-entry-main">
+<h3>Teaching Assistant — Cellular Systems and Physiology</h3>
+<p>University of Florida · Biomedical Engineering</p>
+</div>
+<div class="cv-entry-meta">
+<span>January 2026 – May 2026</span>
+</div>
+</div>
 
-Davie, FLMay 2023
+<ul>
+<li>Mentored a group of 9 students through weekly laboratory sessions, reinforcing human physiology concepts through engineering principles and collaborative problem-solving.</li>
+</ul>
+</div>
+</section>
 
-## Research Experience
+<section class="cv-section">
+<h2>Academic Projects</h2>
 
-### Undergraduate Research Assistant
+<div class="cv-entry cv-entry-detailed">
+<div class="cv-entry-header">
+<div class="cv-entry-main">
+<h3>Fibroblast Proliferation on a Collagen-Modified Surface</h3>
+<p>Cellular Engineering Lab</p>
+</div>
+</div>
 
-Porras TMI Lab · University of Florida
+<ul>
+<li>Examined the effect of Type I collagen-coated surfaces on fibroblast proliferation, cellular behavior, and metabolic activity.</li>
+<li>Assessed cell viability, morphology, metabolic activity, and migration using Live/Dead &amp; Hoechst staining, Alamar Blue assays, brightfield microscopy, and scratch assays.</li>
+</ul>
+</div>
+</section>
 
-September 2025 – Present
+<section class="cv-section">
+<h2>Technical Skills &amp; Certifications</h2>
 
-- Evaluating dbCAN and Cayman for carbohydrate-active enzyme annotation across *Bacteroides fragilis* genomes and related type strains.
-- Comparing CAZyme family annotations, substrate coverage, and substrate specificity with emphasis on host-derived glycans and extracellular matrix components.
-- Performed BLAST searches using *bft-1*, *bft-2*, and *bft-3* reference genes.
-- Used R and Python to visualize genome distributions across host sources and disease states.
+<div class="cv-skills">
+<div>
+<span>Programming</span>
+<p>Python · MATLAB · R · Bash · HTML · CSS</p>
+</div>
 
-## Teaching Experience
+<div>
+<span>Bioinformatics</span>
+<p>BLAST · dbCAN · Cayman</p>
+</div>
 
-### Teaching Assistant — Cellular Systems and Physiology
+<div>
+<span>Tools</span>
+<p>Git · GitHub · LaTeX</p>
+</div>
 
-University of Florida · Biomedical Engineering
+<div>
+<span>Certification</span>
+<p>Certified SolidWorks Associate (CSWA)</p>
+</div>
+</div>
+</section>
 
-January 2026 – May 2026
-
-- Mentored a group of 9 students through weekly laboratory sessions, reinforcing human physiology concepts through engineering principles and collaborative problem-solving.
-
-## Academic Projects
-
-### Fibroblast Proliferation on a Collagen-Modified Surface
-
-Cellular Engineering Lab
-
-- Examined the effect of Type I collagen-coated surfaces on fibroblast proliferation, cellular behavior, and metabolic activity.
-- Assessed cell viability, morphology, metabolic activity, and migration using Live/Dead & Hoechst staining, Alamar Blue assays, brightfield microscopy, and scratch assays.
-
-## Technical Skills & Certifications
-
-Programming
-
-Python · MATLAB · R · Bash · HTML · CSS
-
-Bioinformatics
-
-BLAST · dbCAN · Cayman
-
-Tools
-
-Git · GitHub · LaTeX
-
-Certification
-
-Certified SolidWorks Associate (CSWA)
-
+</div>

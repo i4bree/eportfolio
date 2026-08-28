@@ -1,0 +1,35 @@
+<div class="about-hero">
+
+    <div class="about-image">
+        {{ $image := resources.Get .Page.Params.headshot }}
+
+        {{ if $image }}
+            {{ $image = $image.Resize "500x" }}
+
+            <img
+                src="{{ $image.RelPermalink }}"
+                alt="Professional headshot of {{ .Page.Params.name }}"
+                class="about-headshot"
+            >
+        {{ end }}
+    </div>
+
+    <div class="about-intro">
+
+        <p class="about-eyebrow">
+            {{ .Page.Params.subtitle}}
+        </p>
+
+        <h1>{{ .Page.Params.name }}</h1>
+
+        <p class="about-summary">
+            {{ .Page.Params.summary }}
+        </p>
+
+        <p class="about-description">
+            {{ .Page.Params.intro }}
+        </p>
+
+    </div>
+
+</div>

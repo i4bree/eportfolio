@@ -1,0 +1,276 @@
+/* =========================================================
+   CV Page
+   ========================================================= */
+
+.post-single > header {
+  display: none;
+}
+
+.cv-page {
+  max-width: 950px;
+  margin: 2.5rem auto 0;
+}
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.cv-header {
+  margin-bottom: 4rem;
+}
+
+.cv-eyebrow {
+  margin: 0 0 0.75rem;
+
+  color: var(--green);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cv-header h1 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.cv-subtitle {
+  margin: 0.75rem 0 0;
+
+  color: var(--text-muted);
+
+  font-size: 1.05rem;
+}
+
+.cv-actions {
+  margin-top: 1.5rem;
+}
+
+.cv-button {
+  display: inline-block;
+
+  padding: 0.7rem 1.2rem;
+
+  border: 1px solid var(--site-border);
+  border-radius: var(--radius);
+
+  background: var(--bg-card);
+  color: var(--text);
+
+  font-weight: 500;
+
+  text-decoration: none !important;
+  box-shadow: none !important;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cv-button:hover {
+  background: var(--bg-soft);
+  border-color: var(--green);
+  color: var(--green);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   Sections
+   ========================================================= */
+
+.cv-section {
+  margin-top: 4.5rem;
+}
+
+.cv-section h2 {
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.65rem;
+
+  color: var(--text);
+
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  border-bottom: 1px solid var(--site-border);
+}
+
+/* =========================================================
+   Entries
+   ========================================================= */
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  gap: 2rem;
+
+  padding: 1.25rem 0;
+
+  border-bottom: 1px solid var(--site-border);
+}
+
+.cv-entry-main h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.cv-entry-main p {
+  margin: 0.3rem 0 0;
+
+  color: var(--text-muted);
+}
+
+.cv-entry-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 0.25rem;
+
+  color: var(--text-muted);
+
+  font-size: 0.9rem;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   Detailed Entries
+   ========================================================= */
+
+.cv-entry-detailed {
+  display: block;
+}
+
+.cv-entry-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  gap: 2rem;
+}
+
+.cv-entry-detailed ul {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.cv-entry-detailed li {
+  margin-bottom: 0.6rem;
+
+  color: var(--text-muted);
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   Simple Lists
+   ========================================================= */
+
+.cv-simple-list {
+  border-top: 1px solid var(--site-border);
+}
+
+.cv-simple-list > div {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid var(--site-border);
+}
+
+.cv-simple-list span {
+  color: var(--text);
+}
+
+.cv-simple-list strong {
+  color: var(--text-muted);
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   Skills
+   ========================================================= */
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+.cv-skills > div {
+  padding: 1.2rem 1.3rem;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--site-border);
+  border-radius: var(--radius);
+}
+
+.cv-skills span {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  color: var(--green);
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cv-skills p {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .cv-page {
+    margin-top: 2rem;
+  }
+
+  .cv-entry,
+  .cv-entry-header {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .cv-entry-meta {
+    align-items: flex-start;
+  }
+
+  .cv-simple-list > div {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .cv-skills {
+    grid-template-columns: 1fr;
+  }
+}

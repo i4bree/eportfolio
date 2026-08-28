@@ -1,0 +1,219 @@
+/* =========================================================
+   Theme Colors
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Everforest Light
+   --------------------------------------------------------- */
+
+:root {
+  --bg: #fdf6e3;
+  --bg-soft: #f4f0d9;
+  --bg-card: #f0ead0;
+
+  --text: #5c6a72;
+  --text-muted: #829181;
+
+  --green: #8da101;
+  --aqua: #35a77c;
+  --blue: #3a94c5;
+  --yellow: #dfa000;
+  --orange: #f57d26;
+  --red: #f85552;
+
+  --site-border: #d3c6aa;
+
+  --radius: 10px;
+}
+
+/* ---------------------------------------------------------
+   Everforest Dark
+   --------------------------------------------------------- */
+
+html[data-theme="dark"] {
+  --bg: #2d353b;
+  --bg-soft: #343f44;
+  --bg-card: #3d484d;
+
+  --text: #d3c6aa;
+  --text-muted: #9da9a0;
+
+  --green: #a7c080;
+  --aqua: #83c092;
+  --blue: #7fbbb3;
+  --yellow: #dbbc7f;
+  --orange: #e69875;
+  --red: #e67e80;
+
+  --site-border: #394247;
+}
+
+/* =========================================================
+   PaperMod Theme Variables
+   ========================================================= */
+
+:root {
+  --theme: var(--bg);
+  --entry: var(--bg-card);
+  --primary: var(--text);
+  --secondary: var(--text-muted);
+  --tertiary: var(--site-border);
+  --content: var(--text);
+  --code-bg: var(--bg-soft);
+  --border: var(--site-border);
+}
+
+html[data-theme="dark"] {
+  --theme: var(--bg);
+  --entry: var(--bg-card);
+  --primary: var(--text);
+  --secondary: var(--text-muted);
+  --tertiary: var(--site-border);
+  --content: var(--text);
+  --code-bg: var(--bg-soft);
+  --border: var(--site-border);
+}
+
+/* =========================================================
+   Global
+   ========================================================= */
+
+html,
+body,
+.main {
+  background-color: var(--bg) !important;
+}
+
+html,
+body {
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+/* ---------------------------------------------------------
+   Main content container
+   --------------------------------------------------------- */
+
+.main {
+  width: 100%;
+  max-width: 1100px;
+
+  min-height: auto;
+
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a {
+  color: var(--green);
+}
+
+a:hover {
+  color: var(--aqua);
+}
+
+/* =========================================================
+   PaperMod Cards
+   ========================================================= */
+
+.post-entry {
+  background: var(--bg-card);
+
+  border: 1px solid var(--site-border);
+  border-radius: var(--radius);
+
+  box-shadow: none;
+}
+
+.post-entry:hover {
+  border-color: var(--green);
+}
+
+/* =========================================================
+   PaperMod Footer
+   ========================================================= */
+
+.footer {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+
+  border-top: 1px solid var(--site-border);
+
+  background: var(--bg);
+  color: var(--text-muted);
+
+  box-sizing: border-box;
+}
+
+.footer a {
+  color: var(--text-muted);
+}
+
+.footer a:hover {
+  color: var(--green);
+}
+
+/* =========================================================
+   General Page Content
+   ========================================================= */
+
+.page-header,
+.post-single {
+  max-width: 1100px;
+}
+
+/* =========================================================
+   Mobile Global
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .main {
+    padding: 2rem 1rem 0;
+  }
+}

@@ -1,0 +1,251 @@
+/* =========================================================
+   About Hero
+   ========================================================= */
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 620px);
+
+  gap: 4.5rem;
+  align-items: center;
+
+  max-width: 1000px;
+  margin: 4rem auto 0;
+}
+
+/* =========================================================
+   Headshot
+   ========================================================= */
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-headshot {
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+  border: 1px solid var(--site-border);
+}
+
+/* =========================================================
+   Introduction
+   ========================================================= */
+
+.about-intro {
+  max-width: 620px;
+}
+
+.about-eyebrow {
+  margin: 0 0 0.75rem;
+
+  color: var(--green);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.about-intro h1 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.about-summary {
+  margin: 1rem 0 1.25rem;
+
+  color: var(--text);
+
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.about-description {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   About Navigation Buttons
+   ========================================================= */
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  max-width: 1000px;
+
+  margin: 3.5rem auto 4rem;
+}
+
+.about-link {
+  display: inline-block;
+
+  padding: 0.7rem 1.5rem;
+
+  border: 1px solid var(--site-border);
+  border-radius: var(--radius);
+
+  background: var(--bg-card);
+  color: var(--text);
+
+  font-weight: 500;
+  text-decoration: none !important;
+  box-shadow: none !important;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.about-link:hover {
+  background: var(--bg-soft);
+  border-color: var(--green);
+
+  color: var(--green);
+  text-decoration: none !important;
+  box-shadow: none !important;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   Contact Section
+   ========================================================= */
+
+.contact-footer {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+  padding: 4.5rem 1rem 4rem;
+
+  border-top: 1px solid var(--site-border);
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact-footer h2 {
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+
+.contact-footer p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: var(--text-muted);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.contact-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+
+  margin-top: 1.5rem;
+}
+
+.contact-footer .social-icons a {
+  width: 2.25rem;
+  height: 2.25rem;
+
+  color: var(--green);
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.contact-footer .social-icons a:hover {
+  transform: translateY(-3px);
+  opacity: 0.75;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    max-width: 600px;
+
+    margin: 3rem auto 0;
+
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-headshot {
+    width: 210px;
+    height: 210px;
+  }
+
+  .about-intro {
+    max-width: 600px;
+  }
+
+  .about-intro h1 {
+    font-size: 2.75rem;
+  }
+
+  .about-summary {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-links {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    max-width: 400px;
+
+    margin: 3rem auto 3.5rem;
+  }
+
+  .about-link {
+    text-align: center;
+  }
+
+  .contact-footer {
+    padding: 3.5rem 1rem 3rem;
+  }
+
+  .contact-footer p {
+    font-size: 0.95rem;
+  }
+}

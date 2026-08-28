@@ -1,0 +1,12 @@
+{{- $css := slice
+    (resources.Get "css/extended/theme.css")
+    (resources.Get "css/extended/header.css")
+    (resources.Get "css/extended/about.css")
+    (resources.Get "css/extended/research.css")
+    (resources.Get "css/extended/coursework.css")
+    (resources.Get "css/extended/cv.css")
+-}}
+
+{{- $css = $css | resources.Concat "css/custom.css" | resources.Minify | resources.Fingerprint -}}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

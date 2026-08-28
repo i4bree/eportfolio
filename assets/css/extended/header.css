@@ -1,0 +1,176 @@
+/* =========================================================
+   Site Header
+   ========================================================= */
+
+.site-header {
+  width: 100%;
+  background: var(--bg);
+  border-bottom: 1px solid var(--site-border);
+}
+
+.site-nav {
+  width: 100%;
+  max-width: 1100px;
+  height: 72px;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Logo
+   ========================================================= */
+
+.site-logo {
+  color: var(--text);
+
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: var(--text);
+}
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.site-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.site-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-menu a {
+  color: var(--text-muted);
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.site-menu a:hover {
+  color: var(--text);
+}
+
+.site-menu span {
+  position: relative;
+}
+
+.site-menu span.active {
+  color: var(--green);
+}
+
+.site-menu span.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+
+  height: 2px;
+
+  background: var(--green);
+
+  border-radius: 999px;
+}
+
+/* =========================================================
+   Theme Toggle
+   ========================================================= */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  border: 1px solid var(--site-border);
+  border-radius: 50%;
+
+  background: var(--bg-card);
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-soft);
+  border-color: var(--green);
+
+  transform: translateY(-1px);
+}
+
+.theme-toggle .sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .sun {
+  display: block;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .site-nav {
+    height: auto;
+    min-height: 64px;
+
+    padding: 0 1rem;
+
+    gap: 1rem;
+  }
+
+  .site-nav-right {
+    gap: 1rem;
+  }
+
+  .site-menu {
+    gap: 1rem;
+  }
+
+  .site-menu a {
+    font-size: 0.85rem;
+  }
+}

@@ -15,14 +15,8 @@ headshot: "images/headshot.jpg"
 {{< about-hero >}}
 
 <div class="about-links">
-  <a href="/research/" class="about-link">Research</a>
-  <a href="/coursework/" class="about-link">Coursework</a>
-  <a href="/cv/" class="about-link">Curriculum Vitae</a>
-
-<a class="about-link"
-   href="/files/Bryanna_Downing_Resume.pdf"
-   target="_blank"
-   rel="noopener">
-Résumé
-</a>
+<a class="about-link" href="/research/">Research</a>
+<a class="about-link" href="/coursework/">Coursework</a>
+<a class="about-link" href="/cv/">Curriculum Vitae</a>
+<a class="about-link" href="/files/Bryanna_Downing_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
 </div>

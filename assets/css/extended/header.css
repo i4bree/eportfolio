@@ -154,23 +154,49 @@ html[data-theme="dark"] .theme-toggle .sun {
 
 @media (max-width: 700px) {
   .site-nav {
-    height: auto;
-    min-height: 64px;
+    min-height: auto;
+    padding: 0.9rem 1rem;
 
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "logo toggle"
+      "menu menu";
 
-    gap: 1rem;
+    row-gap: 0.9rem;
+  }
+
+  .site-logo {
+    grid-area: logo;
+
+    font-size: 1rem;
+    white-space: nowrap;
   }
 
   .site-nav-right {
-    gap: 1rem;
+    display: contents;
   }
 
   .site-menu {
-    gap: 1rem;
+    grid-area: menu;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    gap: 0.5rem;
   }
 
   .site-menu a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .theme-toggle {
+    grid-area: toggle;
+
+    width: 34px;
+    height: 34px;
   }
 }

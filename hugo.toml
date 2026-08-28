@@ -53,3 +53,9 @@ url = "https://www.linkedin.com/in/bryanna-downing/"
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+
+[params.assets]
+favicon = "/favicon.png"
+favicon16x16 = "/favicon.png"
+favicon32x32 = "/favicon.png"
+apple_touch_icon = "/favicon.png"

@@ -1,4 +1,4 @@
-baseURL = 'https://bryannadowning.github.io/'
+baseURL = "https://bryannadowning.netlify.app/"
 locale = 'en-us'
 title = "Bryanna Downing"
 theme = "PaperMod"
